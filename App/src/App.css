@@ -1,0 +1,184 @@
+
+@font-face {
+  font-family: 'Geist-black';
+  src: url("assets/Geist-Black.ttf");
+}
+
+@font-face {
+  font-family: 'Geist-Regular';
+  src: url("assets/Geist-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Geist-Medium';
+  src: url("assets/Geist-Medium.ttf");
+}
+
+@font-face {
+  font-family: 'Geist-SemiBold';
+  src: url("assets/Geist-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: 'Geist-Bold';
+  src: url("assets/Geist-Bold.ttf");
+}
+
+.navbar{
+  padding: 6px 0 6px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(239, 239, 239, 0.7);
+  backdrop-filter: blur(25px);
+}
+
+.web-name{
+  display: flex;
+  width: 10.5%;
+  justify-content: space-between;
+}
+
+.logo-text{
+  font-family: 'Geist-black';
+  display: flex;
+  align-items: center;
+}
+
+.main-routes{
+  font-family: 'Geist-SemiBold';
+  display: flex;
+  width: 18%;
+  justify-content: space-between;
+}
+.main-routes p{
+  font-weight: 600;
+}
+
+.Auth{
+  font-family: 'Geist-SemiBold';
+  display: flex;
+  width: 10.5%;
+  justify-content: space-between;
+}
+
+.landing-container{
+  padding: 10% 10% 3% 10%;
+  background-color: #EFEFEF;
+  display: flex;
+  justify-content: space-between;
+}
+
+.landing-container img{
+  border-radius: 2rem;
+}
+
+.text{
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.text-1 p{
+  font-family: 'Geist-Regular';
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding-left: 0.5%;
+}
+
+.text-2 h1{
+  font-family: 'Geist-Bold';
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 110%;
+}
+
+.text-3 h4{
+  font-family: 'Geist-SemiBold';
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #b5b5b5;
+  line-height: 140%;
+}
+
+.CTA{
+  font-family: 'Geist-SemiBold';
+}
+
+.mainpage-container{
+  background-color: #b5b5b5;
+}
+
+.mainpage-container{
+  padding: 10% 10% 9% 10%;
+  background-color: #EFEFEF;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile{
+  width:50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.pic img{
+  border-radius: 150px;
+}
+
+.Name h2{
+  padding-top: 4%;
+  padding-left: 2%;
+  font-family: 'Geist-Medium';
+  font-weight: 800;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'interact interact lecture lecture'
+    'forum forum lecture lecture';
+    gap: 30px;
+  height: 60vh;
+  width: 90%;
+}
+
+.item1, .item2, .item3 {
+  border-radius: 14px;
+}
+
+.item1{
+  grid-area: interact;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 87px 9px rgba(0,0,0,0.1);
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Geist-Medium'
+}
+
+.item2{
+  grid-area: forum;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 87px 9px rgba(0,0,0,0.1);
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Geist-Medium'
+}
+
+.item3{
+  grid-area: lecture;
+  background-color: #000;
+  box-shadow: 0px 10px 87px 9px rgba(0, 0, 0, 0.283);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Geist-Medium';
+  color: #ffffff;
+}
