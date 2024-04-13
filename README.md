@@ -1,3 +1,4 @@
+<p align="center"><img src="https://ibb.co/LRFV0hC"/></p>
 # Bloom - Your Virtual Environment to Connect 
 
 ## 🤖 Introduction
