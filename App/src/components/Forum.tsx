@@ -1,5 +1,4 @@
 import React, { useRef, useState } from 'react';
-import { Link } from "react-router-dom"
 import { initializeApp } from 'firebase/app';
 import { getAuth, signInWithPopup, GoogleAuthProvider, Auth, User } from 'firebase/auth';
 import { collection, getFirestore, serverTimestamp, addDoc, orderBy, query, Firestore } from 'firebase/firestore';
@@ -28,7 +27,11 @@ const Forum: React.FC = () => {
         <>
             <Navbar/>
             <div className='App'>
+                <SignOut/>
                 {user ? <ChatRoom /> : <SignIn />}
+            </div>
+            <div>
+
             </div>
         </>
     )
@@ -43,7 +46,7 @@ const SignIn: React.FC = () => {
     return (
         <>
             <button className="sign-in" onClick={signInWithGoogle}>Sign in with Google</button>
-            <p>Do not violate the community guidelines or you will be banned for life!</p>
+            <p className='signintext'>Do not violate the community guidelines or you will be banned for life!</p>
         </>
     )
 }
@@ -85,7 +88,6 @@ const ChatRoom: React.FC = () => {
                 <h2 className='scroll-m-20 text-3xl font-semibold tracking-tight first:mt-0'>Welcome to<br />the Bloom community</h2>
                 <p>Please maintain decorum in the community forum</p>
             </div>
-            <div className='custom-hr-room-2' />
             <main>
                 {messages && messages.map((msg) => <ChatMessage key={msg.id} message={msg} />)}
                 <span ref={dummy}></span>

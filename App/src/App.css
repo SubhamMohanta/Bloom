@@ -247,10 +247,35 @@ main {
 }
 
 .sign-in {
-  color: #282c34;
+  color: #000000;
+  box-shadow: 0px 10px 87px 9px rgba(0,0,0,0.1);
   background: white;
+  border-radius: 8px;
+  padding:0.5%;
   max-width: 400px;
   margin: 0 auto;
+  margin-left: 45vw;
+  font-family: "Geist-Medium";
+  font-weight: 500;
+}
+
+.signintext{
+  padding-top: 2%;
+  margin-left: 33vw;
+  font-family: "Geist-Medium";
+  font-weight: 400;
+}
+
+.sign-out{
+  color: #000000;
+  box-shadow: 0px 10px 87px 9px rgba(0,0,0,0.1);
+  background: white;
+  border-radius: 8px;
+  padding:0.5%;
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: "Geist-Medium";
+  font-weight: 500;
 }
 
 form {
@@ -278,7 +303,7 @@ form input{
   border-radius: 8px;
   border: none;
   color: #FFFAEA;
-  padding-left: 1%;
+  padding-left: 2%;
 }
 
 main::-webkit-scrollbar {
@@ -290,7 +315,7 @@ main::-webkit-scrollbar-track {
 }
 
 main::-webkit-scrollbar-thumb {
-  background: #DF5333;
+  background: #5296FB;
   border-radius: 12px;  
 }
 
@@ -321,4 +346,9 @@ li {
 .App{
   background-color: #EFEFEF;
   width: 100%;
+  padding-top: 9%;
+  padding-bottom: 23%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

@@ -19,7 +19,7 @@ const Mainpage = () => {
                 </div>
                 <div className='grid-container'>
                     
-                        <Link  className='item1' to="/">
+                        <Link  className='item1' to="https://bloom-hazel.vercel.app/meeting/user_2f27fi90uncOehi1jWd05XYbMkE?personal=true">
                             <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
                                 Interact with peers
                             </h3>
@@ -32,7 +32,7 @@ const Mainpage = () => {
                             </h3>
                         </Link>
                 
-                        <Link className="item3" to="/">
+                        <Link className="item3" to="https://bloom-hazel.vercel.app/">
                             <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
                                 Attend lecture
                             </h3>
