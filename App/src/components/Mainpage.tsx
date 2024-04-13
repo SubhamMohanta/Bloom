@@ -1,4 +1,3 @@
-import React from 'react'
 import Navbar from './Navbar'
 import { useClerk } from "@clerk/clerk-react";
 import { Link } from 'react-router-dom';

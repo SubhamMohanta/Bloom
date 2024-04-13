@@ -1,4 +1,3 @@
-import React from 'react'
 import { Button } from './ui/button'
 import Navbar from './Navbar'
 import Image from "../assets/pexels-julia-m-cameron-4144533.jpg"

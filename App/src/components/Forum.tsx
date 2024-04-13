@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { initializeApp } from 'firebase/app';
-import { getAuth, signInWithPopup, GoogleAuthProvider, Auth, User } from 'firebase/auth';
-import { collection, getFirestore, serverTimestamp, addDoc, orderBy, query, Firestore } from 'firebase/firestore';
+import { getAuth, signInWithPopup, GoogleAuthProvider, Auth} from 'firebase/auth';
+import { collection, getFirestore, serverTimestamp, addDoc, orderBy, query, Firestore, DocumentData } from 'firebase/firestore';
 import { useAuthState } from 'react-firebase-hooks/auth'
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import Navbar from './Navbar';
@@ -22,7 +22,7 @@ const auth: Auth = getAuth(app);
 const firestore: Firestore = getFirestore(app);
 
 const Forum: React.FC = () => {
-    const [user]: [User | null, boolean, Error | null] = useAuthState(auth);
+    const [user] = useAuthState(auth);
     return (
         <>
             <Navbar/>
@@ -62,7 +62,7 @@ const ChatRoom: React.FC = () => {
     const messagesRef = collection(firestore, 'messages');
     const q = query(messagesRef, orderBy('createdAt'));
 
-    const [messages]: [any[], boolean, Error | null] = useCollectionData(q, { idField: 'id' });
+    const [messages] = useCollectionData<DocumentData>(q);
     const [formValue, setFormValue] = useState<string>('');
 
     const sendMessage = async (e: React.FormEvent<HTMLFormElement>) => {
