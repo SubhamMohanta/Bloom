@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
 import { useClerk } from "@clerk/clerk-react";
-import { Badge } from "@/components/ui/badge"
 import { Link } from 'react-router-dom';
 
 const Mainpage = () => {
@@ -27,7 +26,7 @@ const Mainpage = () => {
                         </Link>
                     
                     
-                        <Link className='item2' to="/">
+                        <Link className='item2' to="/Forum">
                             <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
                                 Discussion forum
                             </h3>
