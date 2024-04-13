@@ -80,3 +80,36 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+#google_translate_element {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 1000;
+  background-color: #1E1F22;
+  color: #595F6B;
+  padding: 12px;
+  border-radius: 12px;
+  display: block;
+}
+
+#google_translate_element select::-webkit-scrollbar{
+  width: 9px;
+  background-color: #ffffff;
+}
+
+#google_translate_element select::-webkit-scrollbar-thumb{
+  border-radius: 8px;
+  background-color: #1E1F22;
+}
+
+#google_translate_element select{
+  border-radius: 4px;
+  border: none;
+  font-family: 'semibold';
+  font-size: 16px;
+}
+
+#google_translate_element a{
+  color: #595F6B;
+}
